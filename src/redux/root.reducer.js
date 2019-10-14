@@ -1,7 +1,7 @@
-import successReducer from './reducers/success.reducer';
-import ReduxThunk from 'redux-thunk'
-import { combineReducers } from 'redux'
+
+import { combineReducers} from 'redux'
+import postsReducer from './reducers/posts/reducer';
 
 export default combineReducers({
-  success: successReducer
+  posts: postsReducer
 });
